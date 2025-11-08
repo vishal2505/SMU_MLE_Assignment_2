@@ -1,0 +1,38 @@
+{
+    "snapshot_date": "2024-06-01",
+    "model_name": "XGBoost",
+    "monitored_at": "2025-11-08T02:33:52.290380",
+    "metrics": {
+        "accuracy": 0.7710843373493976,
+        "precision": 0.6242424242424243,
+        "recall": 0.6645161290322581,
+        "f1_score": 0.64375,
+        "threshold": 0.5,
+        "auc_roc": 0.8219505313646196,
+        "log_loss": 0.4837182811747803,
+        "true_negatives": 281,
+        "false_positives": 62,
+        "false_negatives": 52,
+        "true_positives": 103,
+        "psi": 0.040144473646522516
+    },
+    "threshold_checks": {
+        "auc_roc_check": true,
+        "precision_check": true,
+        "recall_check": true,
+        "f1_score_check": true,
+        "psi_warning": true,
+        "psi_critical": true,
+        "all_passed": true,
+        "alert_level": "OK"
+    },
+    "thresholds": {
+        "auc_roc_min": 0.7,
+        "precision_min": 0.6,
+        "recall_min": 0.5,
+        "f1_score_min": 0.55,
+        "psi_warning": 0.1,
+        "psi_critical": 0.2,
+        "performance_degradation_threshold": 0.05
+    }
+}

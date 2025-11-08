@@ -1,0 +1,73 @@
+{
+    "model_name": "LogisticRegression",
+    "features": [
+        "tenure",
+        "loan_amt",
+        "customer_age",
+        "Annual_Income",
+        "Monthly_Inhand_Salary",
+        "Num_Bank_Accounts",
+        "Num_Credit_Card",
+        "Interest_Rate",
+        "Num_of_Loan",
+        "Num_of_Delayed_Payment",
+        "Outstanding_Debt",
+        "Credit_Utilization_Ratio",
+        "Total_EMI_per_month",
+        "Amount_invested_monthly",
+        "Monthly_Balance",
+        "debt_to_income_ratio",
+        "fe_1",
+        "fe_2",
+        "fe_3",
+        "fe_4",
+        "fe_5",
+        "fe_6",
+        "fe_7",
+        "fe_8",
+        "fe_9",
+        "fe_10",
+        "fe_11",
+        "fe_12",
+        "fe_13",
+        "fe_14",
+        "fe_15",
+        "fe_16",
+        "fe_17",
+        "fe_18",
+        "fe_19",
+        "fe_20"
+    ],
+    "train_metrics": {
+        "accuracy": 0.7044310171198389,
+        "precision": 0.48370273794002605,
+        "recall": 0.6601423487544484,
+        "f1_score": 0.5583145221971407,
+        "auc_roc": 0.7529154782056238,
+        "log_loss": 0.5979627730977303
+    },
+    "val_metrics": {
+        "accuracy": 0.7001321003963011,
+        "precision": 0.5040128410914928,
+        "recall": 0.6840958605664488,
+        "f1_score": 0.5804066543438078,
+        "auc_roc": 0.727402451238526,
+        "log_loss": 0.6287158683123891
+    },
+    "test_metrics": {
+        "accuracy": 0.6872509960159362,
+        "precision": 0.4707379134860051,
+        "recall": 0.6357388316151202,
+        "f1_score": 0.5409356725146199,
+        "auc_roc": 0.7250955499968672,
+        "log_loss": 0.6161909179312974
+    },
+    "params": {
+        "C": 1.0,
+        "max_iter": 1000,
+        "random_state": 42,
+        "solver": "lbfgs",
+        "class_weight": "balanced"
+    },
+    "trained_at": "2025-11-07T16:12:54.825892"
+}
