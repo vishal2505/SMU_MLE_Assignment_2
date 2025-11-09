@@ -203,7 +203,7 @@ docker-compose up -d
 ```
 1. After DAG 1 completes through 2024-06-01
 2. Enable dag_2_model_training
-3. It will automatically start when dependencies are met (runs on 2024-12-01)
+3. It will automatically start when dependencies are met (runs on 2024-12-01). If it doesn't start, then Click ▶ (Play) button to manually trigger.
 4. Training uses temporal windows: train/validation/test
 5. Verify: cat model_store/model_config.json
 ```
@@ -212,7 +212,7 @@ docker-compose up -d
 ```
 1. After DAG 2 completes
 2. Enable dag_3_inference_monitoring
-3. Manually trigger the DAG
+3. Click ▶ (Play) button to manually trigger
 4. It runs inference on OOT data (2024-06-01)
 5. Verify: ls datamart/gold/predictions/ and results/monitoring_visualizations/
 ```
