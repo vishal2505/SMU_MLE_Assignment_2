@@ -7,11 +7,15 @@ This project implements an end-to-end machine learning pipeline for predicting l
 
 ### Three-DAG Structure
 
+![AIRFLOW UI](images/image.png)
+
 #### DAG 1: Data Processing Pipeline
 - **File**: `dags/dag_1_data_processing.py`
 - **Schedule**: Monthly (1st of month), 2023-01-01 to 2024-12-01
 - **Purpose**: Process Bronze → Silver → Gold layers
 - **Output**: Feature stores (MOB=0) and label stores (MOB=6)
+
+![DAG_1](images/image-1.png)
 
 #### DAG 2: Model Training Pipeline  
 - **File**: `dags/dag_2_model_training.py`
@@ -20,12 +24,16 @@ This project implements an end-to-end machine learning pipeline for predicting l
 - **Purpose**: Train models using temporal window splits
 - **Output**: Trained models, model_config.json, model_evaluation.json
 
+![ML_Training](images/image-2.png)
+
 #### DAG 3: Inference & Monitoring Pipeline
 - **File**: `dags/dag_3_inference_monitoring.py`
 - **Schedule**: Manual trigger (or scheduled)
 - **Dependencies**: Waits for DAG 2 via ExternalTaskSensor
 - **Purpose**: Run inference on OOT data and monitor performance
 - **Output**: Predictions, monitoring results, visualizations
+
+![ML_Inference](images/image-3.png)
 
 ### Data Pipeline (Bronze → Silver → Gold)
 - **Bronze Layer**: Raw data ingestion from source systems
