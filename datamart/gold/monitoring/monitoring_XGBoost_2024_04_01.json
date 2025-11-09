@@ -1,7 +1,7 @@
 {
     "snapshot_date": "2024-04-01",
     "model_name": "XGBoost",
-    "monitored_at": "2025-11-08T02:33:52.156842",
+    "monitored_at": "2025-11-08T07:10:01.112508",
     "metrics": {
         "accuracy": 0.7368421052631579,
         "precision": 0.5207100591715976,
